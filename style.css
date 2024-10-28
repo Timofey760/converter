@@ -1,0 +1,116 @@
+.button-shadow {
+    background-color: #008CBA; /* Синий фон */
+    border: none; /* Без границы */
+    color: white; /* Белый текст */
+    padding: 15px 32px; /* Внутренние отступы */
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 8px; /* Закругленные углы более выраженные */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Тень */
+    transition: transform 0.2s; /* Плавный переход нажатия */
+}
+
+.button-shadow:active {
+    transform: scale(0.95); /* Эффект нажатия */
+}
+
+.input-simple {
+    padding: 10px; /* Внутренние отступы */
+    border: 1px solid #ccc; /* Светло-серая граница */
+    border-radius: 4px; /* Закругленные углы */
+    font-size: 16px; /* Размер шрифта */
+    outline: none; /* Убрать обводку при фокусе */
+    transition: border-color 0.3s; /* Плавный переход для границы */
+}
+
+.input-simple:focus {
+    border-color: #4CAF50; /* Изменение цвета границы на фокусе */
+}
+
+.button-gradient {
+    background: linear-gradient(to right, #FF5733, #FFC300); /* Градиентный фон */
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: transform 0.3s; 
+}
+
+.button-gradient:hover {
+    transform: scale(1.05); /* Увеличение при наведении */
+}
+
+.button-cross {
+    position: relative; /* Для позиционирования псевдоэлементов */
+    background-color: #f44336; /* Красный фон */
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    overflow: hidden; 
+}
+
+.button-cross::before,
+.button-cross::after {
+    content: ''; /* Создание псевдоэлементов */
+    position: absolute; 
+    width: 300%; 
+    height: 300%; 
+    background: rgba(255, 255, 255, 0.4); 
+    transform: rotate(30deg); /* Поворот */
+    transition: transform 0.5s; 
+    left: 50%; 
+    top: 50%; 
+    z-index: 0; /* За текстом */
+    opacity: 0; /* Скрыть */
+}
+
+.button-cross:hover::before,
+.button-cross:hover::after {
+    opacity: 1; /* Показать при наведении */
+    transform: rotate(0deg); /* Вернуть в исходное положение */
+}
+
+.button-cross span {
+    position: relative; /* Для того чтобы текст был поверх псевдоэлементов */
+    z-index: 1; /* Поверх */
+}
+
+.button-cross {
+    background-color: #008CBA; /* Синий фон */
+    border: none; /* Без границы */
+    color: white; /* Белый текст */
+    padding: 15px 32px; /* Внутренние отступы */
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 8px; /* Закругленные углы более выраженные */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Тень */
+        transition: transform 0.2s; /* Плавный переход нажатия */
+}
+
+
+
+
+
+
+
