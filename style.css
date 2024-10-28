@@ -108,6 +108,36 @@
         transition: transform 0.2s; /* Плавный переход нажатия */
 }
 
+.select-normal {
+    padding: 10px;
+    border: 1px solid #ccc; /* Светло-серая граница */
+    border-radius: 4px; /* Закругленные углы */
+    font-size: 16px; /* Размер шрифта */
+    background-color: #fff; /* Белый фон */
+    color: #333; /* Темный текст */
+    outline: none; /* Убрать стандартную обводку */
+    transition: border-color 0.3s; /* Плавный переход для границы */
+}
+
+.select-normal:focus {
+    border-color: #007BFF; /* Синий цвет границы на фокусе */
+}
+
+.select-shadow {
+    padding: 10px;
+    border: none; /* Без границы */
+    border-radius: 10px; 
+    font-size: 16px; 
+    background-color: #f9f9f9; /* Светлый фон */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень */
+    transition: box-shadow 0.3s; 
+}
+
+.select-shadow:focus {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Увеличение тени на фокусе */
+}
+
+
 
 
 

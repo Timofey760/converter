@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,19 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
+
 <body onload="load()">
-    <H1>
-        конвертр метры в сантиметры
-    </H1>
-    <input class="input-simple" type="number" id="input_metr" value="1">
-    <input class="input-simple" type="number" id="input_sm">
+    <select onchange="changeConverter()" id="selectConverter" class="select-shadow">
+        <option>метры в сантиметры</option>
+        <option>километры в метры</option>
+        <option>дюймы в сантиметры</option>
+        <option>мили в километры</option>
+    </select>
+    <H1 id="captionConverter">метры в сантиметры</H1>
+    <input class="input-simple" type="number" id="inputFrom" value="1">
+    <input class="input-simple" type="number" id="inputTo">
     <button class="button-shadow" onclick="convert()">конвертировать</button>
+    <!--
     <H1>
         конвертр километры в метры
     </H1>
@@ -32,7 +39,8 @@
     <input class="input-simple" type="number" id="input_ml" value="1">
     <input class="input-simple" type="number" id="input_km1">
     <button class="button-cross" onclick="convert4()">конвертировать</button>
+-->
 
-    
 </body>
+
 </html>
